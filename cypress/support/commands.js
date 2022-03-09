@@ -1,3 +1,4 @@
+import job_openings_page from '../page_definition/job_openings.js';
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
@@ -23,3 +24,19 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add('searchBy', (department, office, num_result) => {
+    cy.get(job_openings_page.department_select).click()
+    cy.get('[id="select2-drop"]')
+    .find('[class="select2-result-label"]')
+    .contains(department)
+    .click()
+    cy.get(job_openings_page.office_select).click()
+    cy.get('[id="select2-drop"]')
+    .find('[class="select2-result-label"]')
+    .contains(office)
+    .click()
+    cy.get(job_openings_page.job_counter).should('contain', num_result)
+    cy.get(job_openings_page.job_container)
+    .filter(':visible')
+    .should('have.length', num_result)
+})

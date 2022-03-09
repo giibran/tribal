@@ -1,0 +1,15 @@
+I made a spreadsheets for the manual tests, here is the link of the spreadsheets:
+
+Section 1. UI Manual Testing:
+url: https://docs.google.com/spreadsheets/d/1FwTG_6_C4at2ySWwKXXsGjD7fZrYAj4qt68ObVvX5bg/edit#gid=0
+
+Section 2. API Manual Testing:
+https://docs.google.com/spreadsheets/d/1Wy826N_cCZRscUFtEyioOpCy0G-7uqzsgSOUTJwQbTM/edit#gid=0
+
+Section 3. UI Automation:
+For this section I include a screencast of how is working the automation test,
+I notify that the positions are changing so could be the multiple test will be broken when check the test.
+For the multiple test are you asking me for test all the mixes between department and office but the total is 136 cases,
+its a lot of cases, even in the real world is a bad practice test to much cases for 2 selects, I made some cases cause i think
+that the idea is know how i can resolve a repetitive task
+http://recordit.co/3bQ7gRriLo

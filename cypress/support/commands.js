@@ -24,7 +24,7 @@ import job_openings_page from '../page_definition/job_openings.js';
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-Cypress.Commands.add('searchBy', (department, office, num_result) => {
+Cypress.Commands.add('filterJobBy', (department, office, num_result) => {
     cy.get(job_openings_page.department_select).click()
     cy.get('[id="select2-drop"]')
     .find('[class="select2-result-label"]')
